@@ -20,8 +20,10 @@ namespace jPillajoExamen.View
 
             double jpMontoRestante = 1500 - jpMontoInicial;
             double jpMontoPorCuota = jpMontoRestante / 4;
-            double jpMontoConInteres = jpMontoPorCuota * 1.04;
+            double incremento = jpMontoPorCuota * 0.04;
+            double jpMontoConInteres = jpMontoPorCuota + incremento;
             double jpMontoTotal = jpMontoConInteres * 4 + jpMontoInicial;
+
 
             jpTxtPagoMensual.Text = jpMontoConInteres.ToString("C");
 
