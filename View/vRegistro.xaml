@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jPillajoExamen.View.vRegistro"
+             Title="Registro">
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0"
+        >
+        <Label
+            x:Name="lblUsuario"
+            TextColor="Red"
+            FontSize="14"
+            HorizontalTextAlignment="End"/>
+        <Label 
+            Text="Registro"
+            HorizontalTextAlignment="Center"
+            FontSize="22"
+            TextColor="Blue"
+     />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label 
+                Grid.Row="0" 
+                Grid.Column="0" 
+                Text="Fecha:"
+                VerticalOptions="Fill"/>
+            <Label 
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="País:" 
+                VerticalOptions="Center"/>
+
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                Text="Ciudad:"
+                VerticalOptions="Center"/>
+            <Label  
+                Grid.Row="3"
+                Grid.Column="0"
+                Text="Monto Inicial:" 
+                VerticalOptions="Center"/>
+            <Label 
+                Grid.Row="4"
+                Grid.Column="0" 
+                Text="Pago mensual:"
+                VerticalOptions="Center"/>
+
+            <DatePicker
+                Grid.Row="0" 
+                Grid.Column="1" 
+                x:Name="datePicker"/>
+
+            <Picker 
+                        Grid.Row="1" 
+                        Grid.Column="1" 
+                        x:Name="pickerPais"
+                       >
+                <Picker.Items>
+                    <x:String>ECUADOR</x:String>
+                    <x:String>PANAMA</x:String>
+                    <x:String>MEXICO</x:String>
+                    <x:String>GUATEMALA</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker 
+    Grid.Row="2"
+    Grid.Column="1"
+    x:Name="pickerCiudad"
+    >
+                <Picker.Items>
+                    <!-- Ciudades de Ecuador -->
+                    <x:String>Quito</x:String>
+                    <x:String>Guayaquil</x:String>
+                    <x:String>Cuenca</x:String>
+                    <x:String>Santo Domingo</x:String>
+                    <x:String>Machala</x:String>
+                    <x:String>Ambato</x:String>
+                    <x:String>Manta</x:String>
+                    <x:String>Portoviejo</x:String>
+                    <x:String>Loja</x:String>
+                    <x:String>Ibarra</x:String>
+
+                    <!-- Ciudades de Panamá -->
+                    <x:String>Ciudad de Panamá</x:String>
+                    <x:String>Colón</x:String>
+                    <x:String>David</x:String>
+                    <x:String>Santiago de Veraguas</x:String>
+                    <x:String>Chitré</x:String>
+                    <x:String>La Chorrera</x:String>
+                    <x:String>Penonomé</x:String>
+                    <x:String>Las Tablas</x:String>
+                    <x:String>Aguadulce</x:String>
+                    <x:String>Bocas del Toro</x:String>
+
+                    <!-- Ciudades de México -->
+                    <x:String>Ciudad de México</x:String>
+                    <x:String>Guadalajara</x:String>
+                    <x:String>Monterrey</x:String>
+                    <x:String>Puebla</x:String>
+                    <x:String>Toluca</x:String>
+                    <x:String>Tijuana</x:String>
+                    <x:String>León</x:String>
+                    <x:String>Ciudad Juárez</x:String>
+                    <x:String>Mérida</x:String>
+                    <x:String>Cancún</x:String>
+
+                    <!-- Ciudades de Guatemala -->
+                    <x:String>Ciudad de Guatemala</x:String>
+                    <x:String>Mixco</x:String>
+                    <x:String>Villa Nueva</x:String>
+                    <x:String>Quetzaltenango</x:String>
+                    <x:String>Escuintla</x:String>
+                    <x:String>Antigua Guatemala</x:String>
+                    <x:String>San Juan Sacatepéquez</x:String>
+                    <x:String>Villa Canales</x:String>
+                    <x:String>Chimaltenango</x:String>
+                    <x:String>Huehuetenango</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Entry 
+                        Grid.Row="3" 
+                        Grid.Column="1"
+                        Keyboard="Numeric"
+                        x:Name="txtMontoInicial"/>
+            <Entry 
+                        Grid.Row="4" 
+                        Grid.Column="1" 
+                        x:Name="txtPagoMensual" 
+                        IsEnabled="False"/>
+
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label
+            Grid.Row="0" 
+            Grid.Column="0" 
+            Text="Nombre" 
+            HorizontalOptions="Center" 
+            VerticalOptions="Center"/>
+            <Label 
+            Grid.Row="0" 
+            Grid.Column="1"
+            Text="Apellido" 
+            HorizontalOptions="Center" 
+            VerticalOptions="Center"/>
+            <Label 
+            Grid.Row="0" 
+            Grid.Column="2" 
+            Text="Edad" 
+            Keyboard="Numeric"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+
+            <Entry 
+            Grid.Row="1"
+            Grid.Column="0"
+            x:Name="txtNombre" 
+            Placeholder="Ingresar Nombre"/>
+
+            <Entry 
+            Grid.Row="1" 
+            Grid.Column="1" 
+            x:Name="txtApellido" 
+            Placeholder="Ingresar Apellido"/>
+
+            <Entry 
+            Grid.Row="1"
+            Grid.Column="2"
+            x:Name="txtEdad" 
+            Placeholder="Ingresar Edad"/>
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label
+                Text=""
+                Grid.Row="1"
+                />
+            <Button 
+               x:Name="btnCalcular"
+                Text="Calcular Pago mensual"
+                Clicked="btnCalcular_Clicked"
+                Margin="5"
+                Grid.Row="1"
+                Grid.Column="0"/>
+
+            <Button 
+                x:Name="btnResumen"
+                Text="Ver Resumen" 
+                Clicked="btnResumen_Clicked"
+                Margin="5"
+                Grid.Row="1"
+                Grid.Column="2"/>
+        </Grid>
+        <Entry x:Name="txtmontoTotal" IsVisible="false" />
+    </VerticalStackLayout>
+</ContentPage>
