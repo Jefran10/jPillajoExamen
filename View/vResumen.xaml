@@ -5,7 +5,7 @@
              Title="Resumen">
     <VerticalStackLayout>
         <Label
-       x:Name="lblUsuario"
+       x:Name="jpLblUsuario"
        TextColor="Red"
        FontSize="14"
        HorizontalTextAlignment="End"/>
@@ -34,63 +34,63 @@
             <Label
                 Grid.Row="0" 
                 Grid.Column="1" 
-                x:Name="lblNombre"
+                x:Name="jpLblNombre"
                 TextColor="Red"
                 FontSize="14"
                 />
             <Label
                 Grid.Row="1" 
                 Grid.Column="1" 
-                x:Name="lblApellido"
+                x:Name="jpLblApellido"
                 TextColor="Red"
                 FontSize="14"
                 />
             <Label
                 Grid.Row="2" 
                 Grid.Column="1" 
-                x:Name="lblEdad"
+                x:Name="jpLblEdad"
                 TextColor="Red"
                 FontSize="14"
                 />
             <Label
                 Grid.Row="3" 
                 Grid.Column="1" 
-                x:Name="lblFecha"
+                x:Name="jpLblFecha"
                 TextColor="Red"
                 FontSize="14"
                 />
             <Label
                 Grid.Row="4" 
                 Grid.Column="1" 
-                x:Name="lblCiudad"
+                x:Name="jpLblCiudad"
                 TextColor="Red"
                 FontSize="14"
                 />
             <Label
                 Grid.Row="5" 
                 Grid.Column="1" 
-                x:Name="lblPais"
+                x:Name="jpLblPais"
                 TextColor="Red"
                 FontSize="14"
                 />
             <Label
                 Grid.Row="6" 
                 Grid.Column="1" 
-                x:Name="lblMontoInicial"
+                x:Name="jpLblMontoInicial"
                 TextColor="Red"
                 FontSize="14"
                 />
             <Label
                 Grid.Row="7" 
                 Grid.Column="1" 
-                x:Name="lblPagoMensual"
+                x:Name="jpLblPagoMensual"
                 TextColor="Red"
                 FontSize="14"
                 />
             <Label
                 Grid.Row="8" 
                 Grid.Column="1" 
-                x:Name="lblPagoTotal"
+                x:Name="jpLblPagoTotal"
                 TextColor="Red"
                 FontSize="14"
                 />

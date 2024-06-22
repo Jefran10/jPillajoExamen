@@ -2,7 +2,7 @@ namespace jPillajoExamen.View;
 
 public partial class vLogin : ContentPage
 {
-    string[,] usuariosContraseñas = {
+    string[,] jpUsuariosContrasenas = {
             {"estudiante", "moviles"},
             {"uisrael", "2024"},
 
@@ -13,37 +13,37 @@ public partial class vLogin : ContentPage
         InitializeComponent();
     }
 
-    private void btnIniciar_Clicked(object sender, EventArgs e)
+    private void jpBtnIniciar_Clicked(object sender, EventArgs e)
     {
-        string usu = txtUsuario.Text;
-        string pass = txtContrasena.Text;
+        string jpUsu = jpTxtUsuario.Text;
+        string jpPass = jpTxtContrasena.Text;
 
-        bool usuCorr = false;
-        bool passCorr = false;
+        bool jpUsuCorr = false;
+        bool jpPassCorr = false;
 
-        for (int i = 0; i < usuariosContraseñas.GetLength(0); i++)
+        for (int i = 0; i < jpUsuariosContrasenas.GetLength(0); i++)
         {
-            if (usuariosContraseñas[i, 0] == usu)
+            if (jpUsuariosContrasenas[i, 0] == jpUsu)
             {
-                usuCorr = true;
-                if (usuariosContraseñas[i, 1] == pass)
+                jpUsuCorr = true;
+                if (jpUsuariosContrasenas[i, 1] == jpPass)
                 {
-                    passCorr = true;
+                    jpPassCorr = true;
                     break;
                 }
             }
         }
 
-        if (usuCorr && passCorr)
+        if (jpUsuCorr && jpPassCorr)
         {
 
-            Navigation.PushAsync(new vRegistro(usu));
+            Navigation.PushAsync(new vRegistro(jpUsu));
         }
         else
         {
             DisplayAlert("Alerta", "Dato Incorrecto, Verificar usurio y Contraseña.!!", "Cerrar");
-            txtUsuario.Text = "";
-            txtContrasena.Text = "";
+            jpTxtUsuario.Text = "";
+            jpTxtContrasena.Text = "";
         }
     }
 }

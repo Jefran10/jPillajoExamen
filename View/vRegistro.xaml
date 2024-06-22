@@ -8,7 +8,7 @@
         Padding="30,0"
         >
         <Label
-            x:Name="lblUsuario"
+            x:Name="jpLblUsuario"
             TextColor="Red"
             FontSize="14"
             HorizontalTextAlignment="End"/>
@@ -52,7 +52,7 @@
                 Text="Monto Inicial:" 
                 VerticalOptions="Center"/>
             <Label 
-                Grid.Row="4"
+                Grid.Row="4" 
                 Grid.Column="0" 
                 Text="Pago mensual:"
                 VerticalOptions="Center"/>
@@ -60,12 +60,12 @@
             <DatePicker
                 Grid.Row="0" 
                 Grid.Column="1" 
-                x:Name="datePicker"/>
+                x:Name="jpDatePicker"/>
 
             <Picker 
                         Grid.Row="1" 
                         Grid.Column="1" 
-                        x:Name="pickerPais"
+                        x:Name="jpPickerPais"
                        >
                 <Picker.Items>
                     <x:String>ECUADOR</x:String>
@@ -77,10 +77,10 @@
             <Picker 
     Grid.Row="2"
     Grid.Column="1"
-    x:Name="pickerCiudad"
+    x:Name="jpPickerCiudad"
     >
                 <Picker.Items>
-                    <!-- Ciudades de Ecuador -->
+                   
                     <x:String>Quito</x:String>
                     <x:String>Guayaquil</x:String>
                     <x:String>Cuenca</x:String>
@@ -92,7 +92,7 @@
                     <x:String>Loja</x:String>
                     <x:String>Ibarra</x:String>
 
-                    <!-- Ciudades de Panamá -->
+                 
                     <x:String>Ciudad de Panamá</x:String>
                     <x:String>Colón</x:String>
                     <x:String>David</x:String>
@@ -104,7 +104,6 @@
                     <x:String>Aguadulce</x:String>
                     <x:String>Bocas del Toro</x:String>
 
-                    <!-- Ciudades de México -->
                     <x:String>Ciudad de México</x:String>
                     <x:String>Guadalajara</x:String>
                     <x:String>Monterrey</x:String>
@@ -116,7 +115,7 @@
                     <x:String>Mérida</x:String>
                     <x:String>Cancún</x:String>
 
-                    <!-- Ciudades de Guatemala -->
+                   
                     <x:String>Ciudad de Guatemala</x:String>
                     <x:String>Mixco</x:String>
                     <x:String>Villa Nueva</x:String>
@@ -134,11 +133,11 @@
                         Grid.Row="3" 
                         Grid.Column="1"
                         Keyboard="Numeric"
-                        x:Name="txtMontoInicial"/>
+                        x:Name="jpTxtMontoInicial"/>
             <Entry 
                         Grid.Row="4" 
                         Grid.Column="1" 
-                        x:Name="txtPagoMensual" 
+                        x:Name="jpTxtPagoMensual" 
                         IsEnabled="False"/>
 
         </Grid>
@@ -169,26 +168,26 @@
             Grid.Row="0" 
             Grid.Column="2" 
             Text="Edad" 
-            Keyboard="Numeric"
             HorizontalOptions="Center"
             VerticalOptions="Center"/>
 
             <Entry 
             Grid.Row="1"
             Grid.Column="0"
-            x:Name="txtNombre" 
+            x:Name="jpTxtNombre" 
             Placeholder="Ingresar Nombre"/>
 
             <Entry 
             Grid.Row="1" 
             Grid.Column="1" 
-            x:Name="txtApellido" 
+            x:Name="jpTxtApellido" 
             Placeholder="Ingresar Apellido"/>
 
             <Entry 
             Grid.Row="1"
             Grid.Column="2"
-            x:Name="txtEdad" 
+            x:Name="jpTxtEdad" 
+            Keyboard="Numeric"
             Placeholder="Ingresar Edad"/>
         </Grid>
         <Grid>
@@ -204,21 +203,21 @@
                 Grid.Row="1"
                 />
             <Button 
-               x:Name="btnCalcular"
+               x:Name="jpBtnCalcular"
                 Text="Calcular Pago mensual"
-                Clicked="btnCalcular_Clicked"
+                Clicked="jpBtnCalcular_Clicked"
                 Margin="5"
                 Grid.Row="1"
                 Grid.Column="0"/>
 
             <Button 
-                x:Name="btnResumen"
+                x:Name="jpBtnResumen"
                 Text="Ver Resumen" 
-                Clicked="btnResumen_Clicked"
+                Clicked="jpBtnResumen_Clicked"
                 Margin="5"
                 Grid.Row="1"
                 Grid.Column="2"/>
         </Grid>
-        <Entry x:Name="txtmontoTotal" IsVisible="false" />
+        <Entry x:Name="jpTxtMontoTotal" IsVisible="false" />
     </VerticalStackLayout>
 </ContentPage>

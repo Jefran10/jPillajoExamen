@@ -32,7 +32,7 @@
                 Grid.Row="0"
                  />
             <Entry
-                x:Name="txtUsuario"
+                x:Name="jpTxtUsuario"
                 Placeholder="Ingrese su usuario"
                 MaxLength="20"
                 Grid.Column="1"
@@ -45,7 +45,7 @@
                 Grid.Row="1"
                 Grid.Column="0"/>
             <Entry
-                x:Name="txtContrasena"
+                x:Name="jpTxtContrasena"
                 Placeholder="ingrese contraseña"
                 IsPassword="True"
                 Grid.Row="1"
@@ -57,10 +57,10 @@
                 />
         </Grid>
         <Button
-            x:Name="btnIniciar"
+            x:Name="jpBtnIniciar"
             Text="INICIAR SESION"
             BorderColor="DarkGreen"
-            Clicked="btnIniciar_Clicked" 
+            Clicked="jpBtnIniciar_Clicked" 
             />
     </VerticalStackLayout>
 </ContentPage>

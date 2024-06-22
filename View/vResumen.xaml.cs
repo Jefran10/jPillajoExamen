@@ -6,17 +6,17 @@ namespace jPillajoExamen.View
         {
             InitializeComponent();
 
-            // Aquí puedes usar los datos recibidos para inicializar los elementos de la página
-            lblNombre.Text = jpNombre;
-            lblApellido.Text = jpApellido;
-            lblEdad.Text = jpEdad;
-            lblFecha.Text = jpFecha;
-            lblPais.Text = jpPais;
-            lblCiudad.Text = jpCiudad;
-            lblMontoInicial.Text = jpMontoInicial;
-            lblPagoMensual.Text = jpPagoMensual;
-            lblPagoTotal.Text = jpMontoTotal;
-            lblUsuario.Text = jpCajaUsuario;
+    
+            jpLblNombre.Text = jpNombre;
+            jpLblApellido.Text = jpApellido;
+            jpLblEdad.Text = jpEdad;
+            jpLblFecha.Text = jpFecha;
+            jpLblPais.Text = jpPais;
+            jpLblCiudad.Text = jpCiudad;
+            jpLblMontoInicial.Text = jpMontoInicial;
+            jpLblPagoMensual.Text = jpPagoMensual;
+            jpLblPagoTotal.Text = jpMontoTotal;
+            jpLblUsuario.Text = jpCajaUsuario;
         }
     }
 }
